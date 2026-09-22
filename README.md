@@ -27,8 +27,9 @@ still open is marked with an `<!-- EDIT ME -->` comment.
 
 Still worth your attention:
 
-- **Instagram link** still points at instagram.com. LinkedIn, GitHub and
-  email are correct.
+- **Verify the LinkedIn URL.** It was taken from the text of the CV
+  (`linkedin.com/in/yeh-chul-shin`) rather than from a working link, so open
+  it once to confirm it resolves. Instagram, GitHub and email are confirmed.
 - **Phone number** is on the CV but deliberately left off the site. Add it
   to `contact.html` if you want it reachable publicly.
 - **Photography and video** appear on the site but not on the CV, which is
