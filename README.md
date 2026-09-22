@@ -99,8 +99,29 @@ To collect submissions properly, create a free form at
 
 ## Publishing with GitHub Pages
 
-Settings → Pages → Source: *Deploy from a branch* → `main` / `root`. The site
-goes live at `https://ycshin2023.github.io/my_portfolio_resume/`.
+**The repository must be public.** GitHub Pages is not available on private
+repositories on a free account — the Pages settings screen shows "Upgrade or
+make this repository public to enable Pages" until you change it. Nothing in
+this repo or its history is sensitive (no CV, no phone number, no keys), so
+making it public is safe.
+
+1. Settings → General → Danger Zone → **Change repository visibility** →
+   Public.
+2. Settings → Pages → Source: *Deploy from a branch* → `main` / `/ (root)` →
+   Save. It goes live a minute or two later.
+
+The URL depends on the repository name:
+
+| Repository name | Site URL |
+| --- | --- |
+| `my_portfolio_resume` | `https://ycshin2023.github.io/my_portfolio_resume/` |
+| `ycshin2023.github.io` | `https://ycshin2023.github.io/` |
+
+The second is much better on a CV, and renaming is free: Settings → General →
+Repository name. GitHub redirects the old URLs, so nothing breaks.
+
+To keep the source private instead, deploy from Netlify, Vercel or Cloudflare
+Pages — all three build from a private GitHub repo on their free tiers.
 
 ## Notes
 
