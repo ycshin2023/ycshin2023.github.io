@@ -33,6 +33,9 @@ Still worth your attention:
   to `contact.html` if you want it reachable publicly.
 - **Photography and video** appear on the site but not on the CV, which is
   finance-focused. That is fine — just know the two differ.
+- **The site and the CV disagree in two places.** The site puts ViewTrade in
+  Taipei and lists the KFC role; the CV says Seoul and omits KFC. The site is
+  the corrected version — worth bringing the CV into line before you send it.
 - **Skill percentages** are a judgement call, not from the CV. Each bar is
   driven by `data-level="NN"` with the label beside it as separate text —
   change both together or they drift apart.
