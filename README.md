@@ -20,22 +20,24 @@ reveal, skill-bar animation, contact form), `main.JPG` (hero image),
 
 ## Editing your content
 
-Every block that needs your real details is marked with an
-`<!-- EDIT ME -->` comment. Search the repo for `EDIT ME` to find them all.
+The site is now filled in with real details: SKKU, Stockholm University,
+Westhill Institute, ViewTrade Holdings, Crypto PR, and the freelance photo
+and video work. Anything still uncertain is marked with an `<!-- EDIT ME -->`
+comment — search the repo for `EDIT ME` to find them all.
 
-The main placeholders to replace:
+Still worth your attention:
 
-- **Dates and names** — every `20XX`, `Company Name`, `University Name`,
-  `School Name` and `Your City, Country` is a stand-in.
-- **Stats** — the four numbers on the home page and on `experience.html`.
-- **Social links** — the LinkedIn and Instagram URLs currently point at each
-  site's homepage. The GitHub and email links are already yours.
-- **Skill percentages** — each bar is driven by `data-level="NN"` in
-  `skills.html`. The label next to it is plain text, so change both together.
-
-A tip for `experience.html`: the bullets follow *what I did → what changed as
-a result*. Recruiters skim for the result half, so keep numbers in it where
-you have them.
+- **Experience bullets.** The roles, employers and dates are yours, but the
+  bullet points under each are a plausible scaffold for that kind of role,
+  not a record of what you actually did. Rewrite them before sending this
+  anywhere.
+- **Two inferred dates.** The Stockholm exchange (2025) and the IB diploma
+  (2023) were inferred, not confirmed.
+- **Social links.** LinkedIn and Instagram still point at each site's
+  homepage. GitHub and email are correct.
+- **Skill percentages.** Each bar is driven by `data-level="NN"` and the
+  label beside it is separate text — change both together, or they drift
+  apart.
 
 ## The contact form
 
@@ -57,8 +59,8 @@ To collect submissions properly, create a free form at
   slow on mobile. Resize it to roughly 800×800 and re-export — it displays in
   a circle about 400 px wide. A headshot also lands better with recruiters
   than the current landscape shot.
-- **Add a résumé PDF.** Several pages offer to send one; dropping
-  `resume.pdf` in the repo and linking it directly would save a round trip.
+- **Add a CV PDF.** Several pages offer to send one; dropping `cv.pdf` in
+  the repo and linking it directly would save a round trip.
 
 ## Publishing with GitHub Pages
 

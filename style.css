@@ -290,7 +290,7 @@ section {
 }
 
 .typing-text span::before {
-  content: "Financial Analyst";
+  content: "Business Student";
   color: var(--accent);
   animation: words 12s infinite;
 }
@@ -317,9 +317,9 @@ section {
 }
 
 @keyframes words {
-  0%, 25%   { content: "Financial Analyst"; }
-  26%, 50%  { content: "IT Specialist"; }
-  51%, 75%  { content: "Web Developer"; }
+  0%, 25%   { content: "Business Student"; }
+  26%, 50%  { content: "Research Assistant"; }
+  51%, 75%  { content: "Data Analyst"; }
   76%, 100% { content: "Photographer"; }
 }
 
