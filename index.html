@@ -3,40 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
-<link rel="stylesheet" href="style.css">
-  <title>Portfolio Website</title>
+  <meta name="description" content="Yeh Chul Shin — final-year Global Business Administration student at SKKU and research assistant at a global brokerage-technology firm, seeking financial analyst and asset management roles.">
+  <title>Yeh Chul Shin | Business Student &amp; Research Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Flags that JS is alive so the scroll-reveal styles can apply. -->
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <header>
-    <a href="#" class="logo">Yeh Chul</a>
 
+  <!-- ===== Header ===== -->
+  <header>
+    <a href="index.html" class="logo">Yeh Chul</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
     <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#">Services</a>
-      <a href="#">Skills</a>
-      <a href="#">Education</a>
-      <a href="#">Experience</a>
-      <a href="#">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <!-- ===== Hero =====
+       EDIT ME: intro paragraph + social links -->
   <section class="home">
-  <div class="home-img">
-    <img src="main.JPG" alt="">
-  </div>
-<div class="home-content">
-  <h1>Hi, It's <span>Yeh Chul</span></h1>
-  <h3 class="typing-text">I'm a <span></span></h3>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste id expedita quis aliquam laborum enim, dolorum eius explicabo consequatur, placeat dolore modi temporibus et harum quos earum blanditiis architecto doloribus!</p>
-<div class="social-icons">
-  <a href="#"><i class="fa fa-linkedin"></i></a>
-  <a href="#"><i class="fa fa-github"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-</div>
-<a href="#" class="btn">Hire me</a>
-</div>
+    <div class="home-content">
+      <h1>Hi, It's <span>Yeh Chul</span></h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p>
+        Final-year Global Business Administration student at Sungkyunkwan
+        University, and a research assistant at a global brokerage-technology
+        firm in Taipei. I cover ten global markets, spent a semester at
+        Stockholm Business School, and build analytics-driven finance products
+        on the side. Looking for financial analyst and asset management roles
+        where market data has to become a decision.
+      </p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/yeh-chul-shin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/ycshin2023" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/i.am.chul/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:ycshin2023@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+
+      <div class="btn-row">
+        <a href="contact.html" class="btn solid">Get in touch</a>
+        <a href="experience.html" class="btn">See my experience</a>
+      </div>
+    </div>
+
+    <!-- EDIT ME: main.JPG is currently a landscape shot. A headshot lands
+         better with recruiters here — swap the file and update the alt text
+         to describe whatever image you use. -->
+    <div class="home-img">
+      <img src="main.JPG" alt="Photograph by Yeh Chul Shin">
+    </div>
   </section>
+
+  <!-- ===== Stats =====
+       EDIT ME: swap these four numbers for your real ones -->
+  <div class="stats">
+    <div class="stat"><strong>10</strong><span>Global markets researched</span></div>
+    <div class="stat"><strong>2</strong><span>Products founded</span></div>
+    <div class="stat"><strong>3</strong><span>Countries studied in</span></div>
+    <div class="stat"><strong>4</strong><span>Languages (KR / EN / ES / SE)</span></div>
+  </div>
+
+  <!-- ===== Teasers to sub-pages ===== -->
+  <section>
+    <div class="section-head reveal">
+      <span class="eyebrow">Explore</span>
+      <h2>What you'll find here</h2>
+      <p>Five pages, no fluff &mdash; what I do, what I know, where I studied, where I've worked, and how to reach me.</p>
+    </div>
+
+    <div class="card-grid">
+      <a href="services.html" class="card teaser reveal">
+        <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h3>Services <i class="fa-solid fa-arrow-right"></i></h3>
+        <p>Research and analysis, data and dashboards, communications, photography and video &mdash; what I can take on and what you get back.</p>
+      </a>
+
+      <a href="skills.html" class="card teaser reveal">
+        <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+        <h3>Skills <i class="fa-solid fa-arrow-right"></i></h3>
+        <p>The tools I actually use &mdash; Excel, SQL, R, Python, Lightroom &mdash; with an honest read on where I am with each.</p>
+      </a>
+
+      <a href="education.html" class="card teaser reveal">
+        <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3>Education <i class="fa-solid fa-arrow-right"></i></h3>
+        <p>SKKU, a semester at Stockholm Business School, an IB diploma in Mexico City, and the certifications alongside them.</p>
+      </a>
+
+      <a href="experience.html" class="card teaser reveal">
+        <div class="icon"><i class="fa-solid fa-timeline"></i></div>
+        <h3>Experience <i class="fa-solid fa-arrow-right"></i></h3>
+        <p>Research, communications, two founded products and army service, written as what changed rather than what I was assigned.</p>
+      </a>
+
+      <a href="contact.html" class="card teaser reveal">
+        <div class="icon"><i class="fa-solid fa-paper-plane"></i></div>
+        <h3>Contact <i class="fa-solid fa-arrow-right"></i></h3>
+        <p>Internships, graduate roles or a shoot &mdash; send a note and I'll reply within a day or two.</p>
+      </a>
+
+      <a href="contact.html" class="card teaser reveal">
+        <div class="icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+        <h3>CV <i class="fa-solid fa-arrow-right"></i></h3>
+        <p>Prefer the one-page version? Ask and I'll send the current PDF straight over.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="reveal">
+      <span class="eyebrow">Open to opportunities</span>
+      <h2>Looking for someone who speaks <span>finance</span>, <span>data</span> and four languages?</h2>
+      <p>I'm after financial analyst and asset management roles, graduating February 2027 &mdash; and I take freelance photo and video work year-round.</p>
+      <div class="btn-row">
+        <a href="contact.html" class="btn solid">Start a conversation</a>
+        <a href="mailto:ycshin2023@gmail.com" class="btn">Email me directly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; <span class="year"></span> Yeh Chul Shin. Built from scratch with HTML &amp; CSS.</p>
+    <nav>
+      <a href="services.html">Services</a>
+      <a href="skills.html">Skills</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
