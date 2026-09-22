@@ -289,12 +289,18 @@ section {
   position: relative;
 }
 
+/* The word itself. One word per quarter of the cycle, so each gets 4s. */
 .typing-text span::before {
   content: "Business Student";
   color: var(--accent);
-  animation: words 12s infinite;
+  animation: words 16s infinite;
 }
 
+/* A mask sitting over the word, with the caret on its leading edge.
+   Full width hides the word, zero width reveals it — so shrinking the
+   mask types the word out and growing it again deletes it. `typing` runs
+   at exactly one quarter of `words`, which is what keeps one type-hold-
+   delete pass aligned to one word. */
 .typing-text span::after {
   content: "";
   background-color: var(--bg);
@@ -304,7 +310,7 @@ section {
   width: calc(100% + 0.8rem);
   height: 100%;
   border-left: 3px solid var(--bg);
-  animation: cursor 0.7s infinite, typing 3s steps(18) infinite;
+  animation: cursor 0.7s infinite, typing 4s steps(18, end) infinite;
 }
 
 @keyframes cursor {
@@ -312,14 +318,16 @@ section {
 }
 
 @keyframes typing {
-  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% { width: 0; }
-  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% { width: calc(100% + 0.8rem); }
+  /* Covered at both ends, so the word underneath swaps out of sight. */
+  0%, 8%    { width: calc(100% + 0.8rem); }
+  46%, 70%  { width: 0; }
+  96%, 100% { width: calc(100% + 0.8rem); }
 }
 
 @keyframes words {
   0%, 25%   { content: "Business Student"; }
   26%, 50%  { content: "Research Assistant"; }
-  51%, 75%  { content: "Data Analyst"; }
+  51%, 75%  { content: "Founder"; }
   76%, 100% { content: "Photographer"; }
 }
 

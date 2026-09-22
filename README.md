@@ -20,24 +20,31 @@ reveal, skill-bar animation, contact form), `main.JPG` (hero image),
 
 ## Editing your content
 
-The site is now filled in with real details: SKKU, Stockholm University,
-Westhill Institute, ViewTrade Holdings, Crypto PR, and the freelance photo
-and video work. Anything still uncertain is marked with an `<!-- EDIT ME -->`
-comment — search the repo for `EDIT ME` to find them all.
+Content now comes from the CV: SKKU (BBA, Feb 2027), Stockholm Business
+School, Westhill Institute, ViewTrade Holding Corp., Crypto PR, ROK Army
+service, and the Prata Lang / Perday / LG / BayernLB projects. Anything
+still open is marked with an `<!-- EDIT ME -->` comment.
 
 Still worth your attention:
 
-- **Experience bullets.** The roles, employers and dates are yours, but the
-  bullet points under each are a plausible scaffold for that kind of role,
-  not a record of what you actually did. Rewrite them before sending this
-  anywhere.
-- **Two inferred dates.** The Stockholm exchange (2025) and the IB diploma
-  (2023) were inferred, not confirmed.
-- **Social links.** LinkedIn and Instagram still point at each site's
-  homepage. GitHub and email are correct.
-- **Skill percentages.** Each bar is driven by `data-level="NN"` and the
-  label beside it is separate text — change both together, or they drift
-  apart.
+- **Instagram link** still points at instagram.com. LinkedIn, GitHub and
+  email are correct.
+- **Phone number** is on the CV but deliberately left off the site. Add it
+  to `contact.html` if you want it reachable publicly.
+- **Photography and video** appear on the site but not on the CV, which is
+  finance-focused. That is fine — just know the two differ.
+- **Skill percentages** are a judgement call, not from the CV. Each bar is
+  driven by `data-level="NN"` with the label beside it as separate text —
+  change both together or they drift apart.
+
+## Hero animation
+
+The rotating job title is CSS-only. `words` (16s) swaps the text every
+quarter; `typing` (4s) runs exactly one type-hold-delete pass per word, so
+the two stay locked. The mask is covering the text at both ends of the
+`typing` cycle, which is what hides the word swap. If you add or remove a
+word, change both the `words` percentages and the `typing` duration so it
+stays at one quarter of `words`.
 
 ## The contact form
 
