@@ -90,8 +90,11 @@ To collect submissions properly, create a free form at
   278 KB) but it is still a cityscape, and on the light ground it is the
   darkest thing on the page. The 7 MB original is in git history at commit
   `dec09e9` if you want it back.
-- **Add a CV PDF.** Several pages offer to send one; dropping `cv.pdf` in
-  the repo and linking it directly would save a round trip.
+- **The CV is deliberately not in the repo.** Three pages offer to send it on
+  request instead. That keeps the phone number in its header off a public,
+  indexable page, and avoids shipping a PDF that disagrees with the site. If
+  you later want it downloadable, re-export it without the phone number and
+  with ViewTrade in Taipei first.
 
 ## Publishing with GitHub Pages
 
