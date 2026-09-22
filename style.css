@@ -328,9 +328,9 @@ section {
 
 @keyframes words {
   0%, 25%   { content: "Business Student"; }
-  26%, 50%  { content: "Research Assistant"; }
-  51%, 75%  { content: "Founder"; }
-  76%, 100% { content: "Photographer"; }
+  26%, 50%  { content: "Financial Analyst"; }
+  51%, 75%  { content: "Research Assistant"; }
+  76%, 100% { content: "Video Editor"; }
 }
 
 /* ============================================================

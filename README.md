@@ -86,10 +86,10 @@ To collect submissions properly, create a free form at
 
 ## Known things worth doing
 
-- **`main.JPG` is ~6.6 MB.** That's very heavy for a hero image and will feel
-  slow on mobile. Resize it to roughly 800×800 and re-export — it displays in
-  a circle about 400 px wide. A headshot also lands better with recruiters
-  than the current landscape shot.
+- **Swap the hero for a headshot.** `main.JPG` is now resized (1650×1100,
+  278 KB) but it is still a cityscape, and on the light ground it is the
+  darkest thing on the page. The 7 MB original is in git history at commit
+  `dec09e9` if you want it back.
 - **Add a CV PDF.** Several pages offer to send one; dropping `cv.pdf` in
   the repo and linking it directly would save a round trip.
 
