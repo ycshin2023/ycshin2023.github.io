@@ -40,6 +40,27 @@ Still worth your attention:
   driven by `data-level="NN"` with the label beside it as separate text —
   change both together or they drift apart.
 
+## Colours
+
+The palette lives entirely in the `:root` tokens at the top of `style.css`,
+so a retheme means editing that block, not hunting through the file:
+
+| token | value | role |
+| --- | --- | --- |
+| `--bg` | `#f7f7f5` | page ground, warm off-white |
+| `--surface` | `#efefe9` | alternating sections, stats strip, footer |
+| `--surface-2` | `#ffffff` | cards and panels |
+| `--text` | `#14202e` | body text, deep navy-black |
+| `--muted` | `#5c6b7a` | secondary text |
+| `--accent` | `#a8403c` | the crimson, deepened for contrast on white |
+| `--line` | `#e2e2dc` | neutral hairlines |
+| `--line-accent` | `rgba(168,64,60,.28)` | chip and tag edges |
+
+Light rather than dark is deliberate: the site targets financial analyst and
+asset management roles, where a near-black page reads as a developer
+portfolio and prints badly. Every text/background pair clears WCAG AA — the
+lowest is muted text on the alternating sections at 4.74:1.
+
 ## Hero animation
 
 The rotating job title is CSS-only. `words` (16s) swaps the text every

@@ -4,17 +4,19 @@
    Design tokens
    ============================================================ */
 :root {
-  --accent: #b74b4b;
-  --accent-light: #d96a6a;
-  --accent-soft: rgba(183, 75, 75, 0.12);
-  --bg: #0a0a0a;
-  --surface: #121212;
-  --surface-2: #181818;
-  --line: rgba(183, 75, 75, 0.22);
-  --text: #ececec;
-  --muted: #a3a3a3;
+  --accent: #a8403c;
+  --accent-light: #c4564f;
+  --accent-soft: rgba(168, 64, 60, 0.09);
+  --accent-ink: #ffffff;
+  --bg: #f7f7f5;
+  --surface: #efefe9;
+  --surface-2: #ffffff;
+  --line: #e2e2dc;
+  --line-accent: rgba(168, 64, 60, 0.28);
+  --text: #14202e;
+  --muted: #5c6b7a;
   --radius: 1.2rem;
-  --shadow: 0 1rem 3rem rgba(0, 0, 0, 0.55);
+  --shadow: 0 1px 2px rgba(20, 32, 46, 0.06), 0 1.2rem 2.8rem rgba(20, 32, 46, 0.10);
 }
 
 * {
@@ -43,7 +45,7 @@ body {
 
 ::selection {
   background-color: var(--accent);
-  color: #000;
+  color: var(--accent-ink);
 }
 
 img {
@@ -64,9 +66,9 @@ header {
   left: 0;
   width: 100%;
   padding: 1.6rem 9%;
-  background-color: rgba(10, 10, 10, 0.85);
+  background-color: rgba(247, 247, 245, 0.88);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,13 +187,13 @@ section {
 .btn:hover {
   transform: translateY(-3px);
   background-color: var(--accent);
-  color: #000;
-  box-shadow: 0 0 2.5rem rgba(183, 75, 75, 0.45);
+  color: var(--accent-ink);
+  box-shadow: 0 0.6rem 1.8rem rgba(168, 64, 60, 0.28);
 }
 
 .btn.solid {
   background-color: var(--accent);
-  color: #000;
+  color: var(--accent-ink);
 }
 
 .btn.solid:hover {
@@ -243,13 +245,13 @@ section {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--accent);
-  box-shadow: 0 0 3.5rem rgba(183, 75, 75, 0.35);
+  box-shadow: 0 1.2rem 3rem rgba(20, 32, 46, 0.14);
   transition: 0.3s ease;
 }
 
 .home-img img:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 5rem rgba(183, 75, 75, 0.6);
+  box-shadow: 0 1.8rem 4rem rgba(168, 64, 60, 0.26);
 }
 
 .social-icons {
@@ -272,10 +274,10 @@ section {
 }
 
 .social-icons a:hover {
-  color: #000;
+  color: var(--accent-ink);
   transform: translateY(-5px);
   background-color: var(--accent);
-  box-shadow: 0 0 2rem rgba(183, 75, 75, 0.5);
+  box-shadow: 0 0.5rem 1.4rem rgba(168, 64, 60, 0.3);
 }
 
 /* Rotating job title */
@@ -340,7 +342,7 @@ section {
   gap: 2rem;
   padding: 4rem 9%;
   background-color: var(--surface);
-  border-block: 1px solid rgba(255, 255, 255, 0.05);
+  border-block: 1px solid var(--line);
 }
 
 .stat {
@@ -368,9 +370,9 @@ section {
   padding: 16rem 9% 6rem;
   text-align: center;
   background:
-    radial-gradient(circle at 50% 0%, rgba(183, 75, 75, 0.18), transparent 60%),
+    radial-gradient(circle at 50% 0%, rgba(168, 64, 60, 0.10), transparent 62%),
     var(--bg);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--line);
 }
 
 .page-hero h1 {
@@ -411,7 +413,7 @@ section {
 
 .card {
   background-color: var(--surface-2);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 3rem 2.6rem;
   transition: 0.3s ease;
@@ -509,7 +511,7 @@ section {
    ============================================================ */
 .skill-block {
   background-color: var(--surface-2);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 3rem 2.6rem;
 }
@@ -546,7 +548,7 @@ section {
 .bar {
   height: 0.8rem;
   border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #e6e6e0;
   overflow: hidden;
 }
 
@@ -569,7 +571,7 @@ section {
   font-size: 1.4rem;
   padding: 0.7rem 1.6rem;
   border-radius: 4rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-accent);
   background-color: var(--accent-soft);
   color: var(--text);
   transition: 0.3s ease;
@@ -577,7 +579,7 @@ section {
 
 .tag:hover {
   background-color: var(--accent);
-  color: #000;
+  color: var(--accent-ink);
   transform: translateY(-3px);
 }
 
@@ -598,13 +600,13 @@ section {
   top: 0.8rem;
   bottom: 0.8rem;
   width: 2px;
-  background: linear-gradient(180deg, var(--accent), rgba(183, 75, 75, 0.1));
+  background: linear-gradient(180deg, var(--accent), rgba(168, 64, 60, 0.12));
 }
 
 .timeline-item {
   position: relative;
   background-color: var(--surface-2);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 2.6rem 2.6rem;
   margin-bottom: 2.5rem;
@@ -647,7 +649,7 @@ section {
 
 .timeline-item .org {
   font-size: 1.5rem;
-  color: var(--accent-light);
+  color: var(--accent);
   margin-bottom: 1.2rem;
 }
 
@@ -688,7 +690,7 @@ section {
   font-size: 1.25rem;
   padding: 0.4rem 1.2rem;
   border-radius: 4rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-accent);
   color: var(--muted);
 }
 
@@ -714,7 +716,7 @@ section {
   gap: 1.6rem;
   align-items: flex-start;
   background-color: var(--surface-2);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 2rem 2.2rem;
   transition: 0.3s ease;
@@ -748,7 +750,7 @@ section {
 
 form {
   background-color: var(--surface-2);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 3rem 2.8rem;
 }
@@ -771,7 +773,7 @@ form {
   font-size: 1.5rem;
   color: var(--text);
   background-color: var(--surface);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--line);
   border-radius: 0.8rem;
   padding: 1.2rem 1.4rem;
   transition: 0.3s ease;
@@ -803,7 +805,7 @@ form {
 
 .form-status.show {
   display: block;
-  color: var(--accent-light);
+  color: var(--accent);
 }
 
 /* ============================================================
@@ -812,7 +814,7 @@ form {
 .cta {
   text-align: center;
   background:
-    radial-gradient(circle at 50% 100%, rgba(183, 75, 75, 0.18), transparent 60%),
+    radial-gradient(circle at 50% 100%, rgba(168, 64, 60, 0.10), transparent 62%),
     var(--bg);
 }
 
@@ -835,7 +837,7 @@ form {
 footer {
   padding: 3rem 9%;
   background-color: var(--surface);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -907,7 +909,7 @@ footer a:hover {
     width: 55%;
     min-width: 24rem;
     padding: 2rem 2.5rem;
-    background-color: #161616;
+    background-color: var(--surface-2);
     border-left: 3px solid var(--accent);
     border-bottom: 3px solid var(--accent);
     border-bottom-left-radius: 2rem;
