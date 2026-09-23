@@ -15,8 +15,9 @@ with no framework or build step. Open `index.html` in a browser and it runs.
 | `contact.html` | Contact details, enquiry form, short FAQ |
 
 Shared files: `style.css` (all styling), `script.js` (mobile menu, scroll
-reveal, skill-bar animation, contact form), `main.JPG` (hero image),
-`icons/` (SVG social logos, currently unused — the pages use Font Awesome).
+reveal, skill-bar animation, contact form), `main.JPG` (hero portrait),
+`og-image.jpg` (the 1200×630 card shown when the link is pasted anywhere),
+`favicon.svg` (tab icon).
 
 ## Editing your content
 
@@ -87,15 +88,28 @@ To collect submissions properly, create a free form at
 
 ## Known things worth doing
 
-- **Swap the hero for a headshot.** `main.JPG` is now resized (1650×1100,
-  278 KB) but it is still a cityscape, and on the light ground it is the
-  darkest thing on the page. The 7 MB original is in git history at commit
-  `dec09e9` if you want it back.
+- **Send the full-resolution portrait.** `main.JPG` is a 332×332 crop of a
+  photo that arrived already downscaled to 360×480. It renders in a circle
+  about 430px wide, so it is being upscaled and looks soft, more so on a
+  high-DPI screen. The original off your phone will be several thousand
+  pixels wide and will fix this outright. Re-crop `og-image.jpg` from the
+  same file at the same time.
 - **The CV is deliberately not in the repo.** Three pages offer to send it on
   request instead. That keeps the phone number in its header off a public,
   indexable page, and avoids shipping a PDF that disagrees with the site. If
   you later want it downloadable, re-export it without the phone number and
   with ViewTrade in Taipei first.
+
+## Link previews
+
+Every page carries `og:` and `twitter:` tags so the URL renders as a card
+with a title, description and image instead of bare text. `og:image` must be
+an ABSOLUTE url — `https://ycshin2023.github.io/og-image.jpg` — a relative
+path silently produces no image.
+
+Facebook, LinkedIn and Slack cache these aggressively. After changing the
+card or the tags, force a refresh through LinkedIn's Post Inspector or
+Facebook's Sharing Debugger, or the old version can persist for weeks.
 
 ## Publishing with GitHub Pages
 
