@@ -12,6 +12,7 @@ with no framework or build step. Open `index.html` in a browser and it runs.
 | `skills.html` | Skill groups with proficiency bars, tool list, soft skills |
 | `education.html` | Degrees, certifications, current study |
 | `experience.html` | Career timeline written as outcomes, plus selected projects |
+| `goals.html` | A running note of personal goals — CFA, content, travel |
 | `contact.html` | Contact details, enquiry form, short FAQ |
 
 Shared files: `style.css` (all styling), `script.js` (mobile menu, scroll
@@ -41,6 +42,11 @@ Still worth your attention:
 - **Skill percentages** are a judgement call, not from the CV. Each bar is
   driven by `data-level="NN"` with the label beside it as separate text —
   change both together or they drift apart.
+- **`goals.html` is personal rather than professional**, and it is in the main
+  nav. That is a deliberate choice worth revisiting: it humanises the site,
+  but a conservative finance recruiter may read travel and follower targets as
+  unfocused. Removing it from the header nav while keeping the page reachable
+  from the footer is the middle option.
 
 ## Colours
 
